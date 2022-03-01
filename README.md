@@ -11,7 +11,7 @@ The charts in dashboard updates every second, giving you realtime monitoring exp
 
 ## Donate
 
-Please donate the project by simply clicking `♡` button on the top-right of the page. I like stars, it makes the project meaningful.
+Please donate the project by simply clicking the ♡ button on the top-right of the page. I like stars, it makes the project meaningful.
 
 ## Screenshots
 
