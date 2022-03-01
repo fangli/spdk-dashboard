@@ -11,9 +11,9 @@ The charts in dashboard updates every second, giving you realtime monitoring exp
 
 ## Screenshots
 
-![SPDK Block Device Stat](https://github.com/fangli/spdk-dashboard/blob/master/screenshots/spdk_screenshot_1.jpg?raw=true)
+![SPDK Block Device Stat](https://github.com/fangli/spdk-dashboard/blob/main/screenshots/spdk_screenshot_1.jpg?raw=true)
 
-![SPDK Reactor Stat](https://github.com/fangli/spdk-dashboard/blob/master/screenshots/spdk_screenshot_2.jpg?raw=true)
+![SPDK Reactor Stat](https://github.com/fangli/spdk-dashboard/blob/main/screenshots/spdk_screenshot_2.jpg?raw=true)
 
 ## Metrics
 
