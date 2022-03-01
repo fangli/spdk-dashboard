@@ -1,0 +1,59 @@
+{
+  "name": "spdk-dashboard",
+  "version": "1.4.0",
+  "private": true,
+  "description": "Demo project for building a Bootstrap powered site via npm.",
+  "author": "mdo",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fangli/spdk-dashboard.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fangli/spdk-dashboard/issues"
+  },
+  "homepage": "https://github.com/fangli/spdk-dashboard",
+  "scripts": {
+    "build": "npm run css",
+    "build-dist": "npm-run-all css-compile css-prefix prepare-dist",
+    "css-compile": "node-sass --include-path node_modules --output-style compressed --source-map true --source-map-contents true --precision 6 scss -o assets/css/",
+    "css-lint": "stylelint scss/",
+    "css-prefix": "postcss --replace assets/css/starter.css --use autoprefixer --map",
+    "css-purge": "purgecss --keyframes --css assets/css/starter.css --content index.html \"node_modules/bootstrap/js/dist/{util,modal}.js\" --output assets/css/",
+    "css": "npm-run-all css-compile css-prefix",
+    "prepare-dist": "rm -rf dist && copyfiles -a assets/**/* index.html favicon.ico dist && cat index.html | html-inline -o dist/index.html -b dist && html-minifier --input-dir dist  --output-dir dist --file-ext html --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype --minify-css true --minify-js true",
+    "server": "serve --listen 3000",
+    "start": "npm-run-all --parallel watch server",
+    "watch": "nodemon -e html,scss -x \"npm run css\"",
+    "test": "npm run css-lint && npm run css"
+  },
+  "keywords": [
+    "bootstrap",
+    "sass",
+    "css",
+    "javascript",
+    "starter",
+    "template"
+  ],
+  "dependencies": {
+    "apexcharts": "^3.33.1",
+    "bootstrap": "^4.6.0",
+    "bootstrap-icons": "^1.4.0",
+    "jquery": "^3.6.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "copyfiles": "^2.4.1",
+    "html-minifier": "^4.0.0",
+    "html-inline": "^1.2.0",
+    "node-sass": "^7.0.0",
+    "nodemon": "^2.0.7",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.2.10",
+    "postcss-cli": "^8.3.1",
+    "purgecss": "^4.0.2",
+    "serve": "^11.3.2",
+    "stylelint": "^13.12.0",
+    "stylelint-config-twbs-bootstrap": "^2.1.0"
+  }
+}

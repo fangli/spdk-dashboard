@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/starter.css">
+    <title>SPDK Dashboard</title>
+  </head>
+  <body>
+
+    <div class="col-md-10 px-3 mx-auto">
+      <header class="pb-3 mb-4">
+      <h1 class="h4">
+        <a href="/" class="d-flex align-items-center">
+          <span style="color: white;">SPDK Dashboard</span>
+        </a>
+      </h1>
+    </header>
+    </div>
+    
+    <div id="loading-area" class="col-md-10 px-3 mx-auto">
+      <div id="subsystem-area" class="row sparkboxes">
+        <div class="col-md-12">
+          <div class="text-center jumbotron" style="background-color: inherit">
+            <h5>Please wait while loading metrics for you...</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="chart-area" class="col-md-10 px-3 mx-auto" style="display: none;">
+
+      <div id="bdev-area" class="row sparkboxes">
+        <!-- <div class="col-md-6">
+        </div> -->
+      </div>
+
+      <div id="reactor-area" class="row sparkboxes">
+        <!-- <div class="col-md-6">
+        </div> -->
+      </div>
+
+      <hr class="my-2">
+
+      <div id="subsystem-area" class="row sparkboxes">
+        <div class="col-md-12">
+          <nav>
+            <ol style="background-color: #232536; box-shadow: 8px 6px 17px 0px rgb(0 0 0 / 11%);" class="breadcrumb">
+              <li class="breadcrumb-item active" aria-current="page">
+                <h4 style="margin-bottom: 0; color: #cfcfcf;"><svg width="30" height="30" class="bi"><use xlink:href="assets/css/bootstrap-icons.svg#share"></use></svg>&nbsp;&nbsp;Controllers</h4>
+              </li>
+            </ol>
+          </nav>
+        </div>
+        <div class="col-md-12 mb-4">
+          <div id="controllers-area" class="box shadow" style="color: #cfcfcfd6;">
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-center">
+        <p class="text-muted">♡ <a class="text-muted" target="_blank" href="https://github.com/fangli/spdk-dashboard"><u>SPDK Dashboard</u></a> , Created and open sourced by Felix, Licensed MIT.</p>
+      </div>
+    </div>
+
+    <script src="assets/js/jquery.slim.min.js"></script>
+    <script src="assets/js/apexcharts.min.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+
+</html>
