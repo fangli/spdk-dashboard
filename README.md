@@ -48,7 +48,7 @@ There's a `build.sh` in the repo root. It's a simple bash script, please check i
 ONLY A SINGLE binary is required to deploy this SPDK dashboard. Please either:
 
 * Build the binary yourself
-* Or download the pre-built binary from release page
+* Or download the pre-built binary from [release page](https://github.com/fangli/spdk-dashboard/releases)
 
 And put the binary to wherever your SPDK storage server is running. All good to go.
 
