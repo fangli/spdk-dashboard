@@ -9,6 +9,10 @@ The charts in dashboard updates every second, giving you realtime monitoring exp
 * Nearly ZERO impact on SPDK performance. Actually, we don't pull any metrics from SPDK if no one is watching the dashboard, and there's only one instance of fetcher will be executed even if there're 1000 browser window opened.
 * Easy-peasy deployment. It just works out-of-the-box.
 
+## Donate
+
+Please donate the project by simply clicking `♡` button on the top-right of the page. I like stars, it makes the project meaningful.
+
 ## Screenshots
 
 ![SPDK Block Device Stat](https://github.com/fangli/spdk-dashboard/blob/main/screenshots/spdk_screenshot_1.jpg?raw=true)
