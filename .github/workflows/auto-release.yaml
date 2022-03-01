@@ -32,5 +32,6 @@ jobs:
           prerelease: false
           files: |
             LICENSE
-            build/**/*
+            build/**/*.tar.gz
+            build/**/*.zip
             
